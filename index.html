@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <!-- Leaflet map fullscreen -->
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet'/>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- stylesheet CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ISS Position</title>
+</head>
+<body>
+    <h1 class="text-center">Position de l'ISS en temps réel</h1>
+
+    <div id="map" class="container"></div>
+
+
+    <div class="container">
+        <h1 class="mb-4">Liste des anciennes positions</h1>
+
+        <!-- Tableau -->
+        <table class="table table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Heure</th>
+                    <th>Latitude</th>
+                    <th>longitude</th>
+                </tr>
+            </thead>
+            <!-- Le JS viendra remplir -->
+            <tbody id="table-ISS"></tbody>
+        </table>
+    </div>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- Lib fullscreen -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
